@@ -1,0 +1,7 @@
+CREATE TABLE PENONTON (
+    ID_Penonton UUID,
+    Username VARCHAR(50),
+    PRIMARY KEY(ID_Penonton),
+    FOREIGN KEY(ID_Penonton) REFERENCES NON_PEMAIN(ID),
+    FOREIGN KEY(Username) REFERENCES USER_SYSTEM(Username)
+);
